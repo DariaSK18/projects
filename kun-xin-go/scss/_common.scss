@@ -1,0 +1,59 @@
+// colors
+$mainColor: #14171F;
+// $purpleColor: rgb(107, 119, 229);
+$greenColor: #69C647;
+// $darkColor: rgb(55, 57, 63);
+// $whiteColor: rgb(255, 255, 255);
+
+// samples
+// %title {
+//     color: $darkColor;
+//     font-family: 'Poppins';
+//     font-size: toRem(40);
+//     font-weight: 700;
+//     line-height: toEm(60);
+// }
+
+// icons style
+// %icon {
+//     display: flex;
+//     gap: toEm(10);
+//     color: rgb(255, 255, 255);
+//     font-size: toRem(14);
+//     font-weight: 400;
+//     line-height: toRem(17);
+//     align-items: center;
+//     flex-shrink: 1;
+//     position: relative;
+//     @media (max-width: toEm(500)) {
+//         a,
+//         p {
+//             display: none;
+//             position: absolute;
+//             min-width: toEm(250);
+//             top: 170%;
+//             left: 0;
+//             background: $darkColor;
+//             padding: toEm(10);
+//             border-radius: toEm(10);
+//             border: toEm(2) solid $greenColor;
+//         }
+//     }
+// }
+
+// // mixin for label
+// @mixin label ($color: $darkColor, $font-size: toRem(18), $font-weight: 500, $line-geight: toEm(22)) {
+//     color: $darkColor;
+//     font-size: $font-size;
+//     font-weight: $font-weight;
+//     line-height: $line-geight;
+//     display: flex;
+//     gap: toEm(6);
+//     align-items: center;
+//     &::before {
+//         content: '';
+//         width: toRem(12);
+//         height: toRem(12);
+//         background: $greenColor;
+//     }
+// }

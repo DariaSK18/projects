@@ -1,0 +1,119 @@
+.footer {
+    border-radius: toEm(60) toEm(60) toEm(0) toEm(0);
+    background: $mainColor;
+    color: white;
+    // .footer__container
+
+    &__container {
+        display: flex;
+        gap: toRem(59);
+        padding: toRem(48) toRem(15);
+        // justify-content: space-between;
+        @media(max-width: toEm(1050)) {
+            gap: toRem(24);
+        }
+        @media(max-width: toEm(850)) {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+        @media(max-width: toEm(475)) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    // .footer__box
+    @media(max-width: toEm(850)) {
+        &__box--order {
+             order: 2;
+             grid-column: span 2;
+        } 
+    }
+    &__box {
+        flex-basis: toRem(257);
+    }
+
+    // .footer__logo
+
+    &__logo {
+        // flex-shrink: 0;
+        max-width: toEm(121);
+        max-height: toEm(27);
+        &:not(:last-child) {
+            margin-bottom: toRem(32);
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            aspect-ratio: 121 / 27;
+            object-fit: contain;
+        }
+    }
+
+    // .footer__heading
+
+    &__heading {
+        font-size: toRem(18);
+        font-weight: 700;
+        line-height: 130%;
+        &:not(:last-child) {
+            margin-bottom: toRem(16);
+        }
+    }
+
+    // .footer__currency
+
+    &__currency {
+        display: flex;
+        flex-direction: column;
+        gap: toEm(10);
+        flex-shrink: 0;
+    }
+
+    // .footer__list
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: toEm(10);
+    }
+
+    &__contacts {
+        display: flex;
+        flex-direction: column;
+        gap: toEm(10);
+        &:not(:last-child) {
+            margin-bottom: toRem(20);
+        }
+    }
+
+    // .footer__socials
+
+    &__socials {
+        display: flex;
+        gap: toEm(10);
+        img {
+            // width: 100%;
+            // height: 100%;
+            // aspect-ratio: 28 / 28;
+            // object-fit: contain;
+        }
+    }
+    &__time {
+    //    flex-shrink: 0;
+    }
+    &__box--first {
+        @media(max-width: toEm(850)) {
+             order: -1;
+        } 
+        @media(max-width: toEm(475)) {
+            // display: flex;
+        }
+        }
+    &__box--order {
+    @media(max-width: toEm(850)) {
+            order: -1;
+             display: flex;
+             gap: toEm(24);
+        } 
+    }
+}
