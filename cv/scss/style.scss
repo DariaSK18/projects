@@ -1,0 +1,43 @@
+// Reset
+@import '_reset.scss';
+
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mulish&family=Shafarik&display=swap');
+
+// Main styles
+body {
+    height: 100%;
+    margin: 0;
+    font-family: "Montserrat", serif;
+    @media (max-width: 405px) {
+        font-size: 14px;
+    }
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow: hidden;
+    main {
+        flex: 1;
+    }
+}
+[class*='__container'] {
+    max-width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+	margin: 0 auto;
+    @media (max-width: 405px) {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
+
+//Header
+@import '_header.scss';
+
+//Main
+@import '_main.scss';
+
+//Footer
+@import '_footer.scss';

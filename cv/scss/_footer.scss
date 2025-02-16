@@ -1,0 +1,37 @@
+.footer {
+    color: antiquewhite;
+    background: rgba(35, 44, 43, 0.394);
+    // .footer__container
+
+    &__container {
+        display: flex;
+        gap: 10px;
+        justify-content: space-around;
+    }
+
+    // .footer__box
+
+    &__box {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        text-transform: uppercase;
+        padding: 10px;
+    }
+}
+.box {
+    
+    // .box__icon
+
+    &__icon {
+        max-width: 30px;
+        img {
+            width: 100%;
+        }
+    }
+
+    // .box__title
+
+    &__title {
+    }
+}
